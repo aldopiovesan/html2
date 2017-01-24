@@ -1,0 +1,43 @@
+/* 
+    Created on : 20-gen-2017, 10.24.51
+    Author     : tss
+*/
+
+
+
+td.Gennaio, 
+td.Febbraio, 
+td.Marzo {  /* prendo i vari td col  nome della classe""*/
+
+    background-color: 	#00ff40;
+    text-align: center;
+
+
+}
+
+
+
+
+ td #a, td #b, td #c, td #d, td #e {  /* prendo i vari td con id""*/
+    
+    
+    background-color: 	blueviolet;
+   
+    
+}
+
+
+
+td:nth-child(7){  /* prendo tutte le settime celle */
+    
+    background-color: red;
+}
+
+
+
+ table tr:nth-child(1) td{   /*prendo tutte le celle della prima riga di tutte le tabelle*/
+    
+    background-color: yellow;}
+ 
+ 
+

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form>
+
+            <table border="6" bgcolor="MEDIUMSPRINGGREEN" align="center"  style="width: 400PX; height: 400PX">
+
+                <tr>
+                    <td align="center"><label for="nome">NOME:</label></td>
+                    <td><input type="text" placeholder="inserisci Nome Cognome" id="nome" name="nome"></td>
+                    <td rowspan="9" style="width: 70px" align="center"><input type="submit" value="Start"></td>
+                </tr> 
+                <tr>
+                    <td align="center"><label for="email">EMAIL:</label></td>
+                    <td><input type="text" id="email" name="email"></td>
+                </tr> 
+                <tr>
+                    <td align="center"><label for="password">PASSWORD</label></td>
+                    <td><input type="password" id="password" name="password"></td>
+                </tr> 
+                <tr>
+                    <td align="center">SESSO</td>
+                    <td><label for="m">M</label><input type="radio" name="sesso" id="m" >
+                        <br><label for="f">F</label> <input type="radio" name="sesso" id="f">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center">SPORT</td>
+                    <td><input type="checkbox" name="calcio" value="1" id="calcio">Calcio
+                        <br><input type="checkbox" name="basket" value="2" id="basket" >Basket
+                        <br><input type="checkbox" name="tennis" value="3" id="tennis">Tennis
+                        <br><input type="checkbox" name="nuoto" value="4" id="nuoto">Nuoto
+                    </td>
+                </tr>
+
+                <td align="center">NOTE</td>
+                <td><textarea cols="25" rows="6"
+                              style="resize:none;"
+                              placeholder="inserisci note" name="note" id="note"></textarea>
+
+
+                <tr>
+                    <td>
+                        <label for="Regioni">Regioni</label>
+                    </td>
+
+
+
+
+                    <td colspan="1">                                                               
+                        <select id="Regioni" name="Regioni">
+
+
+
+                            <optgroup label="Nord-Ovest">
+                                <option selected name="Piemonte" id="Piemonte" value="1"> Piemonte</option>
+                                <option selected name="Lombardia" id="Lombardia" value="2"> Lombardia</option>
+                            </optgroup>
+
+                            <optgroup label ="Nord-Est">
+                                <option selected name="Veneto" id="Veneto" value="3"> Veneto</option>
+                                <option selected name="Trentino" id="Trentino" value="4"> Trentino</option>
+
+                            </optgroup>
+                        </select>
+                    </td> 
+                </tr>  
+
+                <tr>
+                    <td>
+                        <label for="Lingue">Lingue</label>
+
+                    </td>
+                    <td>
+                        <select id="Lingue" name="Lingue" multiple size="4">
+                            <option value="1"> Italiano</option>
+                            <option value="2"> Inglese</option>
+                            <option value="3"> Spagnolo</option>
+                            <option value="4">Tedesco</option>
+
+                            <option disabled> Portoghese</option>
+                        </select>
+
+                    </td>
+
+                </tr>
+
+                <tr>    
+                    <td colspan="2" Style="text-align: center;">
+                        <button type="submit">
+                            bottone con scritta a piacimento
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Temperatura
+                    </td>
+
+                    <td>
+                        <input type="range" min="0" max="30" value="15">
+                    </td>
+
+                </tr>
+
+
+
+                <tr>
+                    <td>
+
+                        Browser
+                    </td>
+
+                    <td>
+                        <input list="Browsers" name="Brwsers">
+                        <datalist id="Browsers">
+                            <option value="Internet EXplorer">
+                            <option value="Firefox">
+                            <option value="Chrome">
+
+                        </datalist>
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    
+                    <td> <label for="Colore">
+                        Colore
+                        </label>
+                    </td>
+                    <td>
+                        <input type="color" name="colore" value="#ff0000" id="Colore">
+                        
+                    </td>
+                </tr>
+                
+                
+                <tr>
+                    <td>
+                        ---
+                    </td>
+                    
+                    <td>
+                        <input type="date">
+                    </td>
+                </tr>
+                
+                
+
+
+            </table>
+
+
+        </form> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

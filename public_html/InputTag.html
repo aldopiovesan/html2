@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body bgcolor="lightblue">
+        <form>
+
+            <table border="6" bgcolor="PALEGREEN" align="center"  style="width: 400PX; height: 400PX">
+
+                <tr>
+                    <td align="center"><label for="nome">NOME:</label></td>
+                    <td><input type="text" placeholder="inserisci Nome Cognome" id="nome" name="nome"></td>
+                    <td rowspan="6" style="width: 70px" align="center"><input type="submit" value="Start"></td>
+                </tr> 
+                <tr>
+                    <td align="center"><label for="email">EMAIL:</label></td>
+                    <td><input type="text" id="email" name="email"></td>
+                </tr> 
+                <tr>
+                    <td align="center"><label for="password">PASSWORD</label></td>
+                    <td><input type="password" id="password" name="password"></td>
+                </tr> 
+                <tr>
+                    <td align="center">SESSO</td>
+                    <td><label for="m">M</label><input type="radio" name="sesso" id="m" >
+                        <br><label for="f">F</label> <input type="radio" name="sesso" id="f">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center">SPORT</td>
+                    <td><input type="checkbox" name="calcio" value="1" id="calcio">Calcio
+                        <br><input type="checkbox" name="basket" value="2" id="basket" >Basket
+                        <br><input type="checkbox" name="tennis" value="3" id="tennis">Tennis
+                        <br><input type="checkbox" name="nuoto" value="4" id="nuoto">Nuoto
+                    </td>
+                </tr>
+
+                <td align="center">NOTE</td>
+                <td><textarea cols="25" rows="6"
+                              style="resize:none;"
+                              placeholder="inserisci note" name="note" id="note"></textarea>
+
+                <tr>    
+                    <td colspan="3" Style="text-align: center;">
+                        <button type="submit">
+                            bottone con scritta a piacimento
+                        </button>
+                    </td>
+                </tr>
+
+
+            </table>
+
+
+        </form> 
+
+
+        <form>
+            <table align ="center">
+                <td bgcolor="yellow"><label for="nn"> Ricerca:</label> </td>
+                <td><input type="text" name="m" id="nn" placeholder="parola da ricercare">
+                </td>
+            </table>
+        </form>
+    </body>
+</html>

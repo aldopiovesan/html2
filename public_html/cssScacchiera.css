@@ -1,0 +1,43 @@
+
+/* 
+    Created on : 24-gen-2017, 15.47.34
+    Author     : tss
+*/
+table#tabella1{
+    
+    border: solid 1px blue;
+    border-spacing: 2px 2px;
+   /* border-collapse: */
+   margin: auto;
+    
+}
+
+td{
+    width: 20px;
+    height: 20px;
+    border: solid black 2px;
+    
+}
+
+table#tabella1 tr:first-child td,
+table#tabella1 tr:last-child td,
+table#tabella1 tr td:first-child,
+table#tabella1 tr td:last-child
+{
+    
+    background-color: red;
+}
+
+table#tabella1 tr:nth-child(2n+1) td:nth-child(2n+1),
+table#tabella1 tr:nth-child(2n):nth-child(n+2) td:nth-child(2n):nth-child(n+2)
+
+ {
+    
+    background-color: indianred;
+}
+
+
+
+
+
+

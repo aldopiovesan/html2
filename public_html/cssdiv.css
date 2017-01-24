@@ -1,0 +1,38 @@
+
+/* 
+    Created on : 24-gen-2017, 13.59.36
+    Author     : tss
+*/
+
+
+
+div#esercizio1 div{
+
+
+    height:20px;
+
+    width:300px;
+    border: solid 1px blue;
+    margin: 2px 20px; 
+
+        
+
+
+}
+
+ div#esercizio1 div:nth-of-type(odd){
+    border-right:  solid 20px red;
+    width: 30px; 
+    
+   
+    
+    
+    
+    
+}
+
+
+    
+
+
+
