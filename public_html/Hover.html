@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            table{
+
+                border: solid 3px red;
+                margin: auto;
+
+            }
+
+            td{
+                width: 30px;
+                height: 30px;
+                border:solid black;
+
+
+
+            }
+
+
+            #tabellaHover:hover{
+                background-color: tomato;
+
+
+
+
+
+            }
+
+            #tabellaHover td:hover{
+                background-color: greenyellow;
+
+                width:50px;
+                height: 50px;
+
+                opacity: .5;
+            }
+
+            .img{
+                width: 29px;
+                height: 29px;
+
+
+            }
+
+            #tabellaHover2.img:hover{
+
+                position: relative;
+                top: 5px; left: 5px;
+
+
+
+
+                background-color: red;
+
+            }
+
+            #tabellaHover2{
+
+                position:relative;
+            }
+
+            #tabellaHover2 td:hover{
+                background-color: black;
+            }
+
+            #tabellaHover2 td:hover .img{  /*usiamo td:hover .img invece di .img:hover x poter gestire l'immagine dentro il td e nn viceversa'*/
+
+                position:absolute; top: 10px; left:220px;
+                width: 60px;
+                height: 60px;
+            }
+
+            #tabellaHover3 .img{
+                width: 29px;
+                height: 29px;
+            }
+
+
+            #tabellaHover3{
+                position: relative;
+            }
+
+            #tabellaHover3 .paragrafo{
+                display: none;
+            }
+
+            #tabellaHover3 td:hover .img{  
+
+                position:absolute; top: 10px; left:220px;
+                width: 60px;
+                height: 60px;
+
+            }
+
+            #tabellaHover3 td:hover .paragrafo{ 
+
+                position:absolute; top: 50px; left:220px;
+                width: 60px;
+                height: 60px;
+                display:block;     /*faccio riaparire il paragrafo*/
+
+            }
+
+
+
+        </style>       
+    </head>
+    <body>
+
+        <table id="tabellaHover">
+            <tbody>
+                <tr>
+                    <td></td>
+
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <br>
+        <table id="tabellaHover2">
+            <tbody>
+                <tr>
+                    <td><img  class="img" src="imghover/emoticon8.jpg" alt=""></td>                    
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img class="img" src="imghover/emoticon5.png" alt="" /> </td>
+
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td> <img class="img" src="imghover/emoticon10.jpg" alt=""/></td>
+
+                    <td></td>
+                    <td> <img class="img" src="imghover/emoticon6.png" alt="" /></td>
+
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td> <img class="img" src="imghover/emoticon2.jpg" alt="" /> </td>
+
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td> <img class="img" src="imghover/emoticon7.jpg" alt="" /></td>
+
+                    <td></td>
+                    <td><img class="img" src="imghover/emoticon3.jpg" alt="" /></td>
+
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td><img class="img" src="imghover/emoticon8.jpg" alt="" /></td>
+
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td> <img class="img" src="imghover/emoticon4.png" alt=""/> </td>
+
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <br>
+
+        <table id="tabellaHover3">
+            <tbody>
+                <tr>
+                    <td> <img class="img" src="imghover/emoticon1.jpg" alt="" /><p class="paragrafo">smile che ride</p></td>
+
+
+                    <td> <img class="img" src="imghover/emoticon10.jpg" alt=""/><p class="paragrafo">bomba che esplode </p></td>
+
+                    <td> <img class="img" src="imghover/emoticon2.jpg" alt=""/><p class="paragrafo">spavento da urlo</p></td>
+
+
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>

@@ -6,30 +6,61 @@
 
 
 
+
+div#esercizio1 {
+    
+    background-color:pink;
+    width: 500px;
+    height: 500px;
+    border: solid 3px green ;
+    
+    /*overflow: scroll;*/ /*serve x gestire gli elementi che nn vedo*/
+   
+}
+
+
+
+
+
 div#esercizio1 div{
 
 
-    height:20px;
+    height:30px;
 
-    width:300px;
-    border: solid 1px blue;
-    margin: 2px 20px; 
-
-        
-
-
+    width:150px;
+    border: solid 15px blue;
+    margin: 5px 20px;               /*  distanza tra i vari div, solo north e west in questo caso*/
+    
+    
+    display: block;
+    float: left;                    /*usato su elementi a blocco, sposta l'elemnto sulla sinistra o destra e gli altri si adeguano*/
+    padding: 10px 10px 10px 10px;   /*serve x posizionare scritta dentro dic*/
+   /* outline: solid 1px red ;  */        /*bordo fuori dal bordo*/
+    border-radius: 10px;             /*modifica gli spigoli dei div*/
+    box-shadow: 10px 10px 10px red;
 }
 
- div#esercizio1 div:nth-of-type(odd){
-    border-right:  solid 20px red;
-    width: 30px; 
-    
-   
-    
-    
+
+div#esercizio1 div:nth-child(2){
+    /*position: relative;
+    left: 50px;
+    top:50px;*/
+    position: absolute;
+    top:1px;
+    left:20px;
+    border-color: yellow;
+    background-color: orangered;
     
     
 }
+
+ /*div#esercizio1 div:nth-of-type(odd){
+    border-right:  solid 5px red;
+    width: 45px; 
+    
+      
+    
+}*/
 
 
     

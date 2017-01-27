@@ -6,46 +6,66 @@ and open the template in the editor.
 -->
 <!DOCTYPE html>
 <html>
-<head>
-<style> 
-div {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: relative;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
-    animation-duration: 4s;
-    animation-delay: 2s;
-}
+    <head>
+        <style> 
+            div#uno {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: relative;             
+                animation-name: example;
+                animation-duration: 6s;
+                animation-delay: 2s;
+            }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
-}
 
-/* Standard syntax */
-@keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
-}
-</style>
-</head>
-<body>
 
-<p><b>Note:</b></p>
+            /* Standard syntax */
+            @keyframes example {
+                0%   {background-color:red; left:0px; top:0px;}
+                25%  {background-color:yellow; left:300px; top:0px;}
+                50%  {background-color:blue; left:200px; top:200px;}
+                75%  {background-color:green; left:0px; top:200px;}
+                100% {background-color:red; left:0px; top:0px;}
+            }
 
-<div></div>
+            div#due {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: relative;            
+                animation-name: example2;
+                animation-duration: 6s;
+                animation-delay: 2s;
+            }
 
-</body>
+
+
+
+            /* Standard syntax */
+            @keyframes example2 {
+                0%   {background-color:red; left:0px; top:100px;}
+                25%  {background-color:yellow; left:200px; top:0px;}
+                50%  {background-color:blue; left:200px; top:200px;}
+                75%  {background-color:green; left:0px; top:200px;}
+                100% {background-color:red; left:0px; top:0px;}
+            }
+
+            div{
+                border: solid 5px black;
+                margin: 10px;
+                border-radius:  20px;
+                box-shadow:  10px 20px 30px green;
+            }
+        </style>
+    </head>
+    <body>
+
+        <p><b>Note:</b></p>
+
+        <div id="uno"></div>
+        <div id="due"></div>
+
+    </body>
 </html>
 
