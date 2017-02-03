@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            body{  
+                counter-reset:contaparagrafi 0;
+
+            }
+
+            p{
+                counter-increment: contaparagrafi 1;
+            }
+            
+            p:before{
+                
+                content:'cont--' counter(contaparagrafi, lower-roman);
+                    
+                
+                color:red;
+                background-color: yellow;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <p> Calcio  </p>
+        <p> Basket  </p>
+        <p> Pallavolo  </p>
+        <p> Tennis  </p>
+        <p> Nuoto  </p>
+        <p> Pugilato  </p>
+
+    </body>
+</html>

@@ -1,0 +1,103 @@
+
+/* 
+    Created on : 3-feb-2017, 10.14.51
+    Author     : tss
+*/
+
+div#contenitoreback2{
+    
+   border: solid 3px black;
+     width: 650px;
+     height: 428px;
+     margin:auto;
+     
+     background-color: blue;
+    
+}
+
+div.uno{
+    
+    float:left;
+     border: solid 2px #66ff33;
+      width: 200px;
+     height: 200px;
+     
+      margin:5px 5px 5px 6px;     
+    
+}
+
+
+#contenitoreback2 div{
+    
+    background-image: url('backgroundPosition/foto.jpg');
+   
+        
+}
+
+div#contenitoreback2 div:nth-child(1){
+    
+    background-position-x: 0px;
+    background-position-y: 0px;
+}
+
+
+div#contenitoreback2 div:nth-child(2){
+    
+    background-position-x: -200px;
+    background-position-y: 0px;
+}
+
+
+div#contenitoreback2 div:nth-child(3){
+    
+    background-position-x: -400px;
+    background-position-y: 0px;
+}
+
+
+div#contenitoreback2 div:nth-child(4){
+    
+    background-position-x: 0px;
+    background-position-y: -200px;
+}
+
+
+div#contenitoreback2 div:nth-child(5){
+    
+    background-position-x: -200px;
+    background-position-y: -200px;
+}
+
+
+div#contenitoreback2 div:nth-child(6){
+    
+    background-position-x: -400px;
+    background-position-y: -200px;
+}
+
+
+div#contenitoreback2:hover div{
+    
+    
+    
+    position: relative;  
+/*    top:12px;
+    left:25px;*/
+     
+    margin:0px;
+    border:none;
+    
+    transition: all 1s;
+}
+
+
+div#contenitoreback2:hover div{
+    
+     top:12px;
+    left:25px;
+}
+
+
+
+
+
