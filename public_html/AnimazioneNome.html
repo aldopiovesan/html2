@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+
+
+
+
+            #contenitoreNome{
+
+                position:relative;
+
+                width: 420px;
+                height: 50px;
+                border: solid 1px red;
+                margin:auto;
+                text-align: center;
+            }
+
+
+            #contenitoreNome div{ 
+
+                line-height: 50px;
+                display:inline-block;
+                text-align: center;
+                width: 90px;
+                height: 50px;
+                font-size:  20px;
+
+
+
+
+
+                vertical-align: middle;
+            }
+
+
+
+
+
+            #contenitoreNome div:hover {
+
+
+
+                transform: rotate(3600deg);
+
+
+                transition:all 5s;
+
+
+                font-size: 50px;
+
+                color:green;
+
+            }
+
+            #balun {
+                width: 50px;
+                height: 50px;
+
+            }
+
+
+            #balun:hover {
+
+
+
+
+                transform: rotatey(360deg);
+
+
+                transition:all 5s;
+
+            }
+
+
+
+            #transizioneImm{
+
+
+
+                position:relative;
+                top:50px;
+                left:340px;
+
+                height: 200px;
+                width: 400px;
+
+                border: solid 1px black;
+            }
+
+
+            #transizioneImm img{
+                position: absolute;
+
+                width: 400px;
+                height: 200px;
+
+            }
+
+            #transizioneImm img:nth-child(2):hover{
+
+                opacity:0;
+
+                transition: all 2s;                                           
+            }
+
+
+            #animazione {
+
+                position:absolute;
+                top: 500px;
+                left:200px;
+                width: 5px;
+                height: 5px;
+                animation: XX 5s infinite;
+
+
+            }
+
+
+            @keyframes XX{
+                10%   { left:0px; top:0px;}
+                25%  { left:100px; top:0px;}
+                50%  { left:100px; top:100px;}
+                75%  { left:0px; top:100px;}
+                100% { left:0px; top:0px;}
+            }
+
+
+        </style>
+
+
+
+    </head>
+    <body>
+
+        <div id="contenitoreNome">
+
+
+            <div class='lettera'>A</div>
+
+            <div class='lettera'>L</div>
+
+            <div class='lettera'>D</div>
+
+            <div class='lettera'>O</div>
+
+
+
+
+        </div>
+
+
+
+        <div id="transizioneImm" >
+
+            <img  src="backgroundPosition/458-challenge-sale-05-rear-wing.jpg" alt=""/>
+            <img src="backgroundPosition/458-challenge-sale-02-front.jpg" alt=""/>
+
+
+        </div>
+
+
+        <p id="animazione">
+
+            X
+
+        </p>
+
+
+    </body>
+</html>

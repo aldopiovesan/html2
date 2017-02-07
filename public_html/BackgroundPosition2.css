@@ -81,20 +81,24 @@ div#contenitoreback2:hover div{
     
     
     position: relative;  
-/*    top:12px;
-    left:25px;*/
-     
+      
     margin:0px;
-    border:none;
+    border-width: 0px;
+    top:12px;
+    left:25px;
     
-    transition: all 1s;
+     atransition: all 1s; 
 }
 
+ 
 
-div#contenitoreback2:hover div{
-    
-     top:12px;
-    left:25px;
+
+div#contenitoreback2 div{
+    margin: 6px;
+    position: relative;  
+    top: 0px;
+    left: 0px;
+    transition: all 1s; 
 }
 
 
