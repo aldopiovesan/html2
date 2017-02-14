@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head >
+
+        <meta charset="UTF-8">
+        <script>
+
+            function inverti() {
+
+                alert("ciao");
+
+                /** variabile locale*/
+                var r = prompt("Introduce nome", "");
+
+                var lunghezza = r.length;
+
+                var r1 = "hai scritto: " + r + "\n";
+
+                var r2 = "lunghezza: " + lunghezza + "\n";
+
+                var r3 = "tipo lunghezza:  " + (typeof lunghezza) + "\n";
+
+                var r4 = "tipo r:  " + (typeof r) + "\n";
+
+
+                var testLung = r.length > 5;
+
+                var r5 = "test Lung:  " + testLung + "\n";
+
+                var r6 = "tipo test: " + (typeof testLung) + "\n";
+
+
+
+                alert(r1);    /**ogni finestra alert compare solo se la richiamo, se no ho tutte le info su una sola*/
+                alert(r2 + r3 + r4 + r5 + r6);
+
+
+                if (testLung) {
+
+                    alert("il nome ha una lunghezza ok!");
+
+                } else {
+
+                    alert("il nome è troppo corto!");
+
+                }
+
+
+                var car = r.charAt(0);
+                var car2 = r.charAt(3);
+                alert("1° carattere: " + car + "\n" + "4° carattere: " + car2);
+
+
+               
+
+                var s = reverse(r);
+                
+                alert(s);
+
+
+            }
+
+             /**
+              * reverse -
+              *  parametro string
+              * 
+              */
+
+
+            function reverse(x){
+                
+                var s = "";  
+                
+                 if (typeof x !="string"){
+                    
+                    console.log("errore nei parametri")
+                }
+               
+               for (var i=x.length-1; i>=0; i--){
+                 
+                 s += x.charAt(i);
+                 
+                 }
+                 
+                 return s;
+
+            }
+            
+            
+            
+            function scriviInverso() {
+                
+                var scritta= document.getElementById("nomeUtente").value
+                alert ("scriviInverso. " +scritta)
+                var rev = reverse (scritta)
+                
+                alert ("scriviInverso: " + rev)
+                
+                document.getElementById("nomeUtente").value = rev
+                
+                
+                
+            }
+            
+            
+            function somma2Numeri(){
+                
+                var a= prompt ("primo numero")
+                
+                var b = prompt ("secondo numero")
+                
+                var n1= parseInt(a, 10)
+                var n2= parseInt(b, 10)
+                
+                alert(n1+n2)
+            }
+
+        </script>
+    </head>
+    <body>
+        <input type="button" value="prompt" onclick="b = prompt('ciao sono Aldo'); alert()"> <!-- input utente con popup, inseriamo in b il testo e viene stampato in alert -->
+
+
+       
+
+        <input type="button" value="confirm" onclick="c = confirm('ciao sono Aldo');
+                alert(c)"> <!-- pop x confermare qualcosa, ok true esci false -->
+
+
+        <input type="button" value="alert" onclick="alert('ciao sono Aldo')"> <!--popup con messaggio in uscita -->
+
+        <br>
+        <br>
+
+        <input type="button" value="clicca qui" onclick="inverti()"> <!-- collego fuzione inverti() su output -->
+        
+        
+        <br>
+        <br>
+        
+        <input type="text" id="nomeUtente">
+        <input type="button" onclick="scriviInverso()" value="inv.">
+        
+        
+        <br>
+        
+         <input type="button" value="somma" onclick="somma2Numeri()">
+    </body>
+</html>
