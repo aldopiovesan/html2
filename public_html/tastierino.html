@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Tastierino</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <style>
+
+            #main{
+
+                border: solid 1px black;
+                width: 200PX;
+                height: 50px;
+
+                overflow: auto;
+
+            }
+
+            input{
+
+                width: 20px;
+                height: 10px;
+
+                type:submit;
+                value:cc;
+            }
+
+
+            img{
+                height: 15px;
+                width: 15px;
+            }
+
+
+        </style>
+
+        <script>
+
+            function addTesto(x) {
+
+                document.getElementById("main").innerHTML += x;  //serve x scrivere dentro div  
+
+                /**var y = document.getElemntById(main").innerHtml
+                 *     document.getElementById("main") = y + x
+                 
+                 */
+
+
+            }
+
+
+            function cancellare() {
+
+                c = confirm("vuoi cancellare il testo?");
+
+                if (c == true) {
+
+                    document.getElementById("main").innerHTML = ""
+
+                }
+
+
+            }
+            
+            
+
+            function addImage(nomeFile) {
+
+
+
+                var html = "<img src=\''+ nomefile + '\' width=\'100\'>"
+
+                addTesto(html)
+
+            }
+
+
+
+        </script>
+
+
+    </head>
+    <body>
+        <div id="main">
+
+        </div>
+
+
+
+        <button value="A" onclick="addTesto(this.value)">
+            A
+        </button>
+
+        <button value="B" onclick="addTesto(this.value)">
+            B
+        </button>
+
+
+        <button  value="C" onclick="addTesto(this.value)">
+            C
+        </button>
+
+        <button  value="D" onclick="addTesto(this.value)">
+            D
+        </button>
+
+        <button value="E" onclick="addTesto(this.value)">
+            E
+        </button>
+
+
+        <br>
+        <button value="spazio" onclick="addTesto('&nbsp')">
+            spazio
+        </button>
+
+        <button value="a capo" onclick="addTesto('<br>')">
+            a capo
+        </button>
+
+
+
+        <button value="cancellare" onclick="cancellare()">
+            cance
+        </button>
+
+
+        <br>
+
+
+
+        <img src="backgroundPosition/smileb.png" alt="" onclick="addTesto('<img src=backgroundPosition/smileb.png>')"/>
+
+
+    </body>
+</html>
